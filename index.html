@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          class="searchbar"
+          name=""
+          id=""
+          placeholder="City name"
+        />
+        <button>&#128269;</button>
+      </div>
+      <div class="weather loading">
+        <h2 class="city">Weather in Denver</h2>
+        <h1 class="temp">51°C</h1>
+        <div class="temp-container">
+          <div class="desc">Cloudy</div>
+          <img
+            src="http://openweathermap.org/img/wn/10n.png"
+            class="icon"
+            alt=""
+          />
+        </div>
+        <div class="humidity">Humidity: 60%</div>
+        <div class="wind">Wind speed: 6.2km/h</div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
